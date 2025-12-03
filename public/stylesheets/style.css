@@ -1,8 +1,30 @@
 body {
+  background-color: #F7F7F7;
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 14px "Montserrat", sans-serif;
 }
 
-a {
-  color: #00B7FF;
+h1 {
+  font: 20px "Italianno Regular", sans-serif;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+}
+
+.nav-links a {
+    color: black;
+    text-decoration: none;
+    padding: 25px;
+    border: 3px solid black;
+    border-radius: 12px;
+    transition: 0.2s;
+}
+
+.nav-links a:hover {
+    background-color: #10291D;
+    color: #F7C64A;
 }
