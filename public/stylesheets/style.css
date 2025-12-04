@@ -23,7 +23,7 @@ body {
 
 .menu {
   width: 100%;
-  max-width: 440px;
+  max-width: 1000px;
   display: block;
   margin: auto;
 }
@@ -32,7 +32,7 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 50px;
+  gap: 5px;
 }
 
 .menu-links a {
@@ -109,5 +109,25 @@ Montserrat: https://fonts.google.com/specimen/Montserrat
 }
 
 .nav-links a:hover {
+  color: #F7C64A;
+}
+
+.about-links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 50px;
+}
+
+.about-links a {
+  font: inherit;
+  color: #F7F7F7;
+  text-decoration: none;
+  padding: 25px;
+  border: 3px solid #F7C64A;
+  border-radius: 12px;
+}
+
+.about-links a:hover {
   color: #F7C64A;
 }
