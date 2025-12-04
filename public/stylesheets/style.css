@@ -1,11 +1,29 @@
 body {
   background-color: #F7F7F7;
   padding: 50px;
-  font: 14px "Montserrat", sans-serif;
 }
 
-h1 {
-  font: 20px "Italianno Regular", sans-serif;
+/*Citations for fonts:
+Italianno: https://fonts.google.com/specimen/Italianno 
+Montserrat: https://fonts.google.com/specimen/Montserrat 
+*/
+
+.brand {
+  font-family: 'Italianno', cursive;
+  font-size: 100px;
+}
+
+.italianno-regular {
+  font-family: "Italianno", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.montserrat-regular {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .nav-links {
