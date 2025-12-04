@@ -15,10 +15,36 @@ body {
   font-family: inherit;
   font-size: 30px;
   color: #F7F7F7;
-  transition: 0.2s;
 }
 
 .home-button:hover {
+  color: #F7C64A;
+}
+
+.menu {
+  width: 100%;
+  max-width: 440px;
+  display: block;
+  margin: auto;
+}
+
+.menu-links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 50px;
+}
+
+.menu-links a {
+  font: inherit;
+  color: #F7F7F7;
+  text-decoration: none;
+  padding: 15px;
+  border: 3px solid #F7C64A;
+  border-radius: 12px;
+}
+
+.menu-links a:hover {
   color: #F7C64A;
 }
 
@@ -80,7 +106,6 @@ Montserrat: https://fonts.google.com/specimen/Montserrat
   padding: 25px;
   border: 3px solid #F7C64A;
   border-radius: 12px;
-  transition: 0.2s;
 }
 
 .nav-links a:hover {
