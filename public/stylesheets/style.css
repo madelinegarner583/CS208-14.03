@@ -1,4 +1,5 @@
 body {
+  font-family: 'Montserrat', sans-serif;
   background-color: #10291D;
   padding: 20px;
   align-items: center;
@@ -11,12 +12,6 @@ body {
   height: 3px;
   background-color: #F7C64A;
   margin-bottom: 50px;
-}
-
-.brand {
-  font-family: 'Italianno', cursive;
-  font-size: 50px;
-  color: #F7F7F7;
 }
 
 .home-logo {
@@ -33,13 +28,6 @@ Montserrat: https://fonts.google.com/specimen/Montserrat
 
 .italianno-regular {
   font-family: "Italianno", cursive;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.montserrat-regular {
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
 }
@@ -62,6 +50,5 @@ Montserrat: https://fonts.google.com/specimen/Montserrat
 }
 
 .nav-links a:hover {
-  background-color: #10291D;
   color: #F7C64A;
 }
