@@ -1,24 +1,35 @@
 body {
-  background-color: #F7F7F7;
+  background-color: #10291D;
   padding: 20px;
   align-items: center;
   justify-items: center;
   margin: auto;
 }
 
-header {
-  background-color: #10291D;
+.divider {
+  width: 50%;
+  height: 3px;
+  background-color: #F7C64A;
+  margin-bottom: 50px;
+}
+
+.brand {
+  font-family: 'Italianno', cursive;
+  font-size: 50px;
+  color: #F7F7F7;
+}
+
+.home-logo {
+  width: 100%;
+  max-width: 600px;
+  display: block;
+  margin: 20px auto;
 }
 
 /*Citations for fonts:
 Italianno: https://fonts.google.com/specimen/Italianno 
 Montserrat: https://fonts.google.com/specimen/Montserrat 
 */
-
-.brand {
-  font-family: 'Italianno', cursive;
-  font-size: 100px;
-}
 
 .italianno-regular {
   font-family: "Italianno", cursive;
@@ -41,10 +52,11 @@ Montserrat: https://fonts.google.com/specimen/Montserrat
 }
 
 .nav-links a {
-  color: black;
+  font: inherit;
+  color: #F7F7F7;
   text-decoration: none;
   padding: 25px;
-  border: 3px solid black;
+  border: 3px solid #F7C64A;
   border-radius: 12px;
   transition: 0.2s;
 }
