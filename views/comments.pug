@@ -2,6 +2,18 @@ extends layout
 
 block content
   a.home-button(href='/').italianno-regular Downtown Donuts
-  h2 Comments
+  h2 Please leave us a comment!
   .divider
-  p lorem ipsum
+  ol
+  each val in todos
+    li
+      span= val.task
+      form(method='POST' action='/comments/delete')
+        input(type='hidden', name='id', value=val.id)
+        button(type='submit') Delete
+
+  form(method='POST' action='/comments/create')
+    label(for='task') Comment:
+    textarea(id='task', name='task', rows='5', cols='40')
+    //input(type='text', name='task', id='task', required)
+    button(type='submit') Post
