@@ -161,6 +161,7 @@ li {
   padding: 25px;
 }
 
+/* This donut emoji replaces the normal bullet point! */
 li::before {
   content: "🍩";
 }
