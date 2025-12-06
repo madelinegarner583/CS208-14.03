@@ -1,11 +1,8 @@
 var express = require('express');
 var router = express.Router();
-/*
-router.get('/', (req, res) => {
-    res.render('comments');
-});
-*/
 
+//I used the template code for todos in order to get my comments to work correctly.
+//If I had allowed myself more time to work on this I would have tried to make a comments database!
 router.get('/', function(req, res, next){
   try {
     req.db.query('SELECT * FROM todos;', (err, results) => {

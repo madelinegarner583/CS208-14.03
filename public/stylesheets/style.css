@@ -1,3 +1,14 @@
+/*Citations for fonts:
+Italianno: https://fonts.google.com/specimen/Italianno 
+Montserrat: https://fonts.google.com/specimen/Montserrat 
+*/
+
+.italianno-regular {
+  font-family: 'Italianno', cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
   background-color: #10291D;
@@ -6,13 +17,32 @@ body {
   margin: 20px;
 }
 
+h2 {
+  font-family: inherit;
+  font-size: 18px;
+  color: #F7F7F7;
+}
+
+p {
+  font-family: inherit;
+  font-size: 14px;
+  color: #F7F7F7;
+}
+
+.divider {
+  width: 50%;
+  height: 3px;
+  background-color: #F7C64A;
+  margin-bottom: 50px;
+}
+
+/* HOME */
 .home-button {
   text-decoration: none;
   border: solid #F7C64A;
   border-radius: 20px;
   padding: 10px;
   justify-self: left;
-  font-family: inherit;
   font-size: 30px;
   color: #F7F7F7;
 }
@@ -21,6 +51,34 @@ body {
   color: #F7C64A;
 }
 
+.home-logo {
+  width: 100%;
+  max-width: 600px;
+  display: block;
+  margin: 20px auto;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 50px;
+}
+
+.nav-links a {
+  font: inherit;
+  color: #F7F7F7;
+  text-decoration: none;
+  padding: 25px;
+  border: 3px solid #F7C64A;
+  border-radius: 12px;
+}
+
+.nav-links a:hover {
+  color: #F7C64A;
+}
+
+/* MENU */
 .menu {
   width: 100%;
   max-width: 1000px;
@@ -48,32 +106,6 @@ body {
   color: #F7C64A;
 }
 
-h2 {
-  font-family: inherit;
-  font-size: 18px;
-  color: #F7F7F7;
-}
-
-p {
-  font-family: inherit;
-  font-size: 14px;
-  color: #F7F7F7;
-}
-
-.divider {
-  width: 50%;
-  height: 3px;
-  background-color: #F7C64A;
-  margin-bottom: 50px;
-}
-
-.home-logo {
-  width: 100%;
-  max-width: 600px;
-  display: block;
-  margin: 20px auto;
-}
-
 .menu-logo {
   width: 50%;
   display: block;
@@ -81,37 +113,7 @@ p {
   margin: 20px auto;
 }
 
-/*Citations for fonts:
-Italianno: https://fonts.google.com/specimen/Italianno 
-Montserrat: https://fonts.google.com/specimen/Montserrat 
-*/
-
-.italianno-regular {
-  font-family: 'Italianno', cursive;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.nav-links {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 50px;
-}
-
-.nav-links a {
-  font: inherit;
-  color: #F7F7F7;
-  text-decoration: none;
-  padding: 25px;
-  border: 3px solid #F7C64A;
-  border-radius: 12px;
-}
-
-.nav-links a:hover {
-  color: #F7C64A;
-}
-
+/* ABOUT */
 .about-links {
   position: fixed;
   bottom: 0;
@@ -131,5 +133,61 @@ Montserrat: https://fonts.google.com/specimen/Montserrat
 }
 
 .about-links a:hover {
+  color: #F7C64A;
+}
+
+/* COMMENTS */
+form {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+input {
+  background-color: #F7F7F7;
+}
+
+li {
+  color: black;
+  display: flex;
+  background-color: #F7F7F7;
+  border: 3px solid #F7C64A;
+  border-radius: 12px;
+  align-items: center;
+  gap: 5px;
+  margin: 20px;
+  list-style-type: none;
+  padding: 25px;
+}
+
+li::before {
+  content: "🍩";
+}
+
+.posted-comments {
+  color: black;
+}
+
+.delete-comment {
+  margin: 5px;
+  font: inherit;
+  color: black;
+  background-color: #F7F7F7;
+  padding: 5px;
+  border: 2px solid black;
+  border-radius: 12px;
+}
+
+.post-comment {
+  margin: 5px;
+  font: inherit;
+  color: #F7F7F7;
+  background-color: #10291D;
+  padding: 5px;
+  border: 2px solid #F7C64A;
+  border-radius: 12px;
+}
+
+.post-comment:hover, .delete-comment:hover {
   color: #F7C64A;
 }
